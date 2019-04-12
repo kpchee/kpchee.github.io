@@ -37,6 +37,7 @@ function signOut(){
     alert(errorMessage)
   });
 };
+// change password
 function change() {
   var user = firebase.auth().currentUser;
   var newPassword = document.getElementById("newpass");
@@ -47,6 +48,7 @@ function change() {
     alert('Must enter a name and password fields')
   });
 }
+// stores email and pictures together in a 2D array
 var profiles = []
 function getProfile() {
   var db = firebase.firestore();
@@ -60,6 +62,7 @@ function getProfile() {
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
+    // adds html depending on signed in or not
     document.getElementById("loginbutton").innerHTML = ""
     document.getElementById("loginbutton").innerHTML = `<a href="#" class="nav-link" onclick="signOut()">Logout</a>`
     document.getElementById("registerbutton").innerHTML = ""
@@ -69,6 +72,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     setTimeout(updatePic, 7000)
   } else {
     // No user is signed in.
+    // removes html if signed out
     document.getElementById("loginbutton").innerHTML = ""
     document.getElementById("loginbutton").innerHTML = `<a href="#" class="nav-link" data-toggle="modal" data-target="#login">Login</a>`
     document.getElementById("registerbutton").innerHTML = ""
