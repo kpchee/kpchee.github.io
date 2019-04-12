@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDc0FcQmbrVjKBmErGXMesOWj5iZg-i9Kk",
+        authDomain: "final-project-ac1fe.firebaseapp.com",
+        databaseURL: "https://final-project-ac1fe.firebaseio.com",
+        projectId: "final-project-ac1fe",
+        storageBucket: "final-project-ac1fe.appspot.com",
+        messagingSenderId: "142870942068"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <title>About Me</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" class="navbar-brand">
+          <img src="images/k-logo.png" class="d-inline-block align-top" alt="logo">
+          Kevin's Page
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="about.html" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Me</a>
+            </li>
+            <li class="nav-item" id="secretcats"></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="random" role="button" data-toggle="dropdown">
+                Random
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="guess.html">Minigame</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+                <a class="dropdown-item" href="drinks.html">Drinks</a>
+                <a class="dropdown-item" href="computer.html">Computer</a>
+              </div>
+            </li>
+            <li class="nav-item" id="loginbutton">
+              <a href="#" class="nav-link" data-toggle="modal" data-target="#login">Login</a>
+            </li>
+            <li class="nav-item" id="registerbutton">
+              <a href="register.html" class="nav-link">Register</a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal fade" id="login">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <form method="post" action="#">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="loginpassword">Password</label>
+                    <input type="password" class="form-control" id="loginpassword" placeholder="Enter password" required>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" onclick="signIn()" data-dismiss="modal" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container mt-4">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="images/bcit.jpg" alt="BCIT" height="400" width="800">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/snowboard.jpeg" alt="Snowboarding" height="400" width="800">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="images/csgo.jpg" alt="CSGO" height="400" width="800">
+          </div>
+        </div>
+      </div>
+      <div class="jumbotron">
+        <h1 class="display-4">
+          About Me!
+        </h1>
+        <hr class="my-4">
+        <p class="lead">
+          I go to BCIT, like to snowboard, and play video games like CSGO. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+    <footer class="footer mt-auto text-right py-2 pr-3 bg-light text-muted">
+      <small>
+        Copyright &copy; 2019 - All rights reserved
+      </small>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

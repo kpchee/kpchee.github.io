@@ -1,0 +1,36 @@
+k-logo.png:
+https://commons.wikimedia.org/wiki/File:K_in_a_circle.png
+vancouverskyline.jpg:
+https://pixabay.com/photos/vancouver-skyline-canada-place-754204/
+csgo.jpg:
+https://www.foxsportsasia.com/esports/csgo/1061437/professional-csgo-player-from-new-zealand-loses-life-in-christchurch-attack/
+snowboard.jpg:
+http://paspapt.com/4-injuries-common-snowboarders-avoid/
+bcit.jpg:
+http://www.dialogdesign.ca/projects/bcit-gateway/
+pythonlogo.png:
+https://code.fb.com/production-engineering/python-in-production-engineering/
+linux.png:
+https://en.wikipedia.org/wiki/File:Tux.svg
+sql.jpg:
+https://www.itprotoday.com/sql-server/upgrading-sql-server-2016-part-three
+html.png:
+https://en.wikipedia.org/wiki/File:HTML5_logo_and_wordmark.svg
+cat images:
+original content
+blankprofile.png:
+https://pixabay.com/vectors/blank-profile-picture-mystery-man-973460/
+dice.png:
+https://en.wikipedia.org/wiki/File:2-Dice-Icon.svg
+bluepowerade.jpg:
+https://www.coca-colaproductfacts.com/en/products/powerade/mountain-berry-blast/32-oz/
+no.jpg:
+http://tracieberrymcghee.com/cup-of-nia-blog/say-no-and-really-mean-it/
+ramen.png:
+http://seonkyounglongest.com/ramen/
+sushi.jpg:
+https://peasandcrayons.com/2012/10/homemade-sushi-tips-tricks-and-toppings.html
+pizza.jpg:
+https://en.wikipedia.org/wiki/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg
+windows.png:
+https://commons.wikimedia.org/wiki/File:Windows_logo_-_2012.svg
